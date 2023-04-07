@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "NSpryNimble", targets: ["NSpryNimble"])
     ],
     dependencies: [
-        .package(url: "https://github.com/NikSativa/NSpry.git", .upToNextMajor(from: "2.0.0")),
+        .package(url: "https://github.com/NikSativa/NSpry.git", .upToNextMajor(from: "2.0.2")),
         .package(url: "https://github.com/Quick/Quick.git", .upToNextMajor(from: "6.1.0")),
         .package(url: "https://github.com/Quick/Nimble.git", .upToNextMajor(from: "11.2.1"))
     ],
@@ -22,7 +22,8 @@ let package = Package(
                     "NSpry",
                     "Nimble"
                 ],
-                path: "Source"),
+                path: "Source"
+               ),
         .testTarget(name: "NSpryNimbleTests",
                     dependencies: [
                         "NSpry",
@@ -30,6 +31,7 @@ let package = Package(
                         "Nimble",
                         "Quick"
                     ],
-                    path: "Tests")
+                    path: "Tests"
+                   )
     ]
 )

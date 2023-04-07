@@ -11,9 +11,9 @@ public func haveRecordedCalls<T: Spyable>() -> Predicate<T> {
             return PredicateResult(status: .fail, message: msg)
         }
 
-        let success = !spyable._callsDictionary.calls.isEmpty
+        let success = spyable.haveRecordedCalls
         let message: ExpectationMessage = .expectedCustomValueTo(msg.expectedMessage,
-                                                                 actual: descriptionOfActual(count: spyable._callsDictionary.calls.count))
+                                                                 actual: descriptionOfActual(count: spyable.recordedCallsCount))
 
         return PredicateResult(bool: success, message: message)
     }
@@ -28,9 +28,9 @@ public func haveRecordedCalls<T: Spyable>() -> Predicate<T.Type> {
             return PredicateResult(status: .fail, message: msg)
         }
 
-        let success = !spyable._callsDictionary.calls.isEmpty
+        let success = spyable.haveRecordedCalls
         let message: ExpectationMessage = .expectedCustomValueTo(msg.expectedMessage,
-                                                                 actual: descriptionOfActual(count: spyable._callsDictionary.calls.count))
+                                                                 actual: descriptionOfActual(count: spyable.recordedCallsCount))
 
         return PredicateResult(bool: success, message: message)
     }
