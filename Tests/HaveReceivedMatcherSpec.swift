@@ -4,7 +4,7 @@ import NSpryNimble
 import Quick
 
 final class HaveReceivedMatcherSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         describe("HaveReceivedMatcher") {
             var subject: SpyableTestHelper!
 

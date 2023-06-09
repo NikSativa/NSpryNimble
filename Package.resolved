@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Quick/Nimble.git",
       "state" : {
-        "revision" : "eb5e3d717224fa0d1f6aff3fc2c5e8e81fa1f728",
-        "version" : "11.2.2"
+        "revision" : "371f7d278ba95a5511c248aaeec84f5dbe770491",
+        "version" : "12.0.1"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/NikSativa/NSpry.git",
       "state" : {
-        "revision" : "9637f6beded886b045980e7259b1026bb948fc9d",
-        "version" : "2.0.3"
+        "revision" : "cee2487470f8d660f8cb961f5c6de04ac3ddec3d",
+        "version" : "2.1.0"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Quick/Quick.git",
       "state" : {
-        "revision" : "16910e406be96e08923918315388c3e989deac9e",
-        "version" : "6.1.0"
+        "revision" : "f2ce7e2373106b1b562dc965e1eee2324f9e72e3",
+        "version" : "7.0.1"
       }
     }
   ],
